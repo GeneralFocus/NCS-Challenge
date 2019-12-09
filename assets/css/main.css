@@ -53,3 +53,23 @@
     width: calc(100%-300px);
     padding: 50px;
 }
+
+#main-content .menu-tile .tile{
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    background: #fff;		
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+#main-content .menu-tile .tile .title{
+    margin-top: 0px;
+}
+
+.purple{
+    background: #5133AB;
+}
+.puple:hover{
+    background: darken(#5133AB, 10%);
+}
