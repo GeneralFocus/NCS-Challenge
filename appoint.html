@@ -33,36 +33,33 @@
         </div>
     </div>
     <div id="main-content">
-        <div class="bg-light p-4" style="border-radius: 8px;">
-            <div class="row">
-                <div class="col-12 p-5">
-                    <form id="form_create_appointment" method="POST">
+        <form id="form_create_appointment" method="POST">
+            <div class="bg-light p-4" style="border-radius: 8px;">
+                <div class="row">
+                    <div class="col-12 p-5">
                         <div class="row">
-                            <div class="col-4 form-group">
+                            <div class="col-6 form-group">
                                 <label class="required">Select Hospital</label>
                                 <select class="form-control" required>
                                     <option></option>
                                 </select>
                             </div>
-                            <div class="col-4 form-group">
+                            <div class="col-6 form-group">
                                 <label class="required">Select Doctor</label>
                                 <select class="form-control" required>
                                     <option></option>
                                 </select>
                             </div>
-                            <div class="col-4 form-group">
-                                <button type="button" class="btn btn-dark btn-block" id="btnLoadSchedule">Load Schedule</button>
+                            <div class="col-12 text-center">
+                                <button type="button" class="btn btn-dark" id="btnLoadSchedule">Load Schedule</button>
                             </div>
                         </div>
-                        <div class="row">
-                            
-                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="bg-light p-4 mt-5" style="border-radius: 8px;">
-            <div class="row p-5">
-                <div class="col">
+            <div class="bg-light p-4 mt-5" style="border-radius: 8px;">
+                <div class="row p-5">
+                    <div class="col">
                         <div class="row">
                             <div class="col-6 form-group">
                                 <label class="required">Date</label>
@@ -85,20 +82,20 @@
                                 <button type="submit" class="btn btn-dark btn-block" id="submit" onclick="make_appointment()">Make Appointment</button>
                             </div>
                         </div>
-                    </form>
-                </div>
-                <div class="col-6 offset-md-1">
-                    <div class="row">
-                        <div class="col-12">
-                            <h5>Appointments</h5>
-                        </div>
                     </div>
-                    <table class="table table-bordered table-hover table-striped table-sm" id="appointment_list">
-                       
-                    </table>
+                    <div class="col-6 offset-md-1">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5>Appointments</h5>
+                            </div>
+                        </div>
+                        <table class="table table-bordered table-hover table-striped table-sm" id="appointment_list">
+                        
+                        </table>
+                    </div>
                 </div>
             </div>
-        </div>
+        </form>
     </div>
 </body>
 <script src="assets/js/jquery-3.3.1.min.js"></script>
